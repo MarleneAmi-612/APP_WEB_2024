@@ -20,9 +20,11 @@ function operacion(){
         result = document.getElementById('resultado').innerHTML=`<h2>${n1} ${simbolo} ${n2} = ${ope}</h2>`;  // Mostrar la operación completa
     }
 
-    else
-        // result = document.getElementById('resultado').innerHTML=`<h2>Ingrese solo números porfas</h2>`;
+    else{
+        result = document.getElementById('resultado').innerHTML=`<h2></h2>`; //paque borre
         alert ("Ingrese solo números porfas")
+    }
+        
   
 }
     

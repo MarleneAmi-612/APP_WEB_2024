@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="estilos.css">
+
+</head>
+
+<body>
+
+    <form action="">
+        <div id="principal">
+            <header>
+                <h1>.:Calculadora Básica:.</h1><br><br>
+                <hr>
+            </header>
+            <label for="n1">Número1:</label>
+            <input type="number" id="n1" value=""><br>
+
+
+            <label for="n2">Número2:</label>
+            <input type="number" id="n2" value=""><br>
+            <!-- Me faltó agregarle id al número 2, asi que no recogia el valor de n2, gracias a eso no imprimia-->
+
+            <h1></h1>Tipo de Operacion:
+            <select name="operaciones" id="calculador">
+                <option value="Suma" selected>Suma</option>
+                <option value="Resta">Resta</option>
+                <option value="Multiplicacion">Multiplicacion</option>
+                <option value="Division">Division</option>
+            </select>
+
+            <br>
+            <input type="button" value="Calcular" onclick="operacion()">
+
+            <hr>
+        </div>
+
+        <div id="resultado"></div>
+
+        <script src="operaciones.js" type="text/JavaScript"></script>
+    </form>
+
+</body>
+
+</html>

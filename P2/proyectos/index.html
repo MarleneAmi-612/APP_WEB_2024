@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Proyectos</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #645a49;
+            background-position: center;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            height: auto;
+            padding-top: 5%;
+            background-color: rgba(58, 49, 34, 0.7); 
+            text-align: center;
+            color: white;
+            text-decoration: underline;
+            font-style: italic;
+            font-weight: normal;
+            font-size: 2rem;
+            padding-bottom: 5%;
+        }
+
+        #contenedor {
+            background-image: url(conejos.jpg);
+            background-size: cover;
+            width: 80%;
+            height: auto;
+            margin: 0 auto;
+            margin-top: px;
+            padding-bottom: 13%;
+
+        }
+
+        ol {
+            margin-top: 8rem;
+            font-size: 1.5rem;
+            padding-left: 40%;
+        }
+
+        ol li {
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        ol li a {
+            text-decoration: none;
+            color: white;
+            display: block;
+
+        }
+
+        footer {
+            background-color: rgba(35, 32, 22, 0.7);
+            padding: 1rem;
+            flex-direction: row;
+            color: whitesmoke;
+            font-size: large;
+            text-align: center;
+
+        }
+
+        @media (max-width: 768px) {
+        h1 {
+            font-size: 1.5rem;
+            padding: 3%;
+        }
+
+        ol {
+            padding-left: 5rem; 
+            font-size: 1.2rem;
+        }
+
+        footer {
+            font-size: 1rem;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <div id="contenedor">
+        <h1>Menu de proyectos de Front End</h1>
+
+        <ol>
+            <li>
+                <a href="calculosJS/index.html" target="_blank">Calculo JS</a>
+            </li>
+            <li>
+                <a href="menu_horizontal_CSS/index.html" target="_blank">Menu Horizontal CSS</a>
+            </li>
+            <li>
+                <a href="proyectoweb/index.html" target="_blank">Proyecto Web</a>
+            </li>
+        </ol>
+
+    </div>
+
+    <footer>
+        <small>Creado por <b>AminewTR </b> &copy; 2024</small>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+/* Estilo general del cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(img/leebitlluvioso.jpg);
+    background-size: cover; /*Imagen mas grandesita*/
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+/* Contenedor principal */
+header {
+    text-align: center;
+    color: #5AB6EB; /* Color de la paleta */
+    margin-bottom: 20px;
+}
+
+/* Estilo del título */
+h1 {
+    font-size: 3rem;
+    color: black; /* Color de la paleta */
+
+}
+
+/* Estilo para los inputs y el select */
+input[type="number"], select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #0b4958;
+    border-radius: 50px; /*curvas en las esquinas*/
+    font-size: 1rem;
+    box-sizing: border-box; /*Cálculo de dimensiones */
+}
+
+/* Botón de calcular */
+input[type="button"] {
+    background-color: gray; /* Color de la paleta */
+    color: white;
+    padding: 10px 100px; /*ancho y altura juntos sin comas*/ 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-bottom: auto;
+    width: 100%;
+}
+
+/* Botón hover */
+input[type="button"]:hover {
+    background-color: #5AB6EB;
+}
+
+/* Resultado */
+#resultado {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    background-color: #0b4958;
+}
+
+
+.figurotas img{
+    width: 80px;
+    height: 80px;
+    margin-left: 130px;
+}
+/* Contenedor para centrar la calculadora */
+form {
+    background-color: none;
+    padding: 100px;
+    border-radius: 700px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 350px;
+}
+
+

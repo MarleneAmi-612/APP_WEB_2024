@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="estilos_area.css">
+
+</head>
+
+<body>
+
+    <form action="">
+        <div id="principal">
+            <header>
+                <h1>.:Calculadora de Áreas:.</h1><br><br>
+                <hr>
+            </header>
+            <label for="n1">Base:</label>
+            <input type="number" id="n1" value=""><br>
+
+
+            <label for="n2">Altura:</label>
+            <input type="number" id="n2" value=""><br>
+            <!-- Me faltó agregarle id al número 2, asi que no recogia el valor de n2, gracias a eso no imprimia-->
+
+            <h1></h1>Tipo de Figura:
+            <select name="operaciones" id="calculador">
+                <option value="Rectangulo" selected>Rectangulo</option>
+                <option value="Cuadrado">Cuadrado</option>
+                <option value="Circulo">Circulo</option>
+                <option value="Triangulo">Triangulo</option>
+            </select>
+
+            <br>
+            <input type="button" value="Calcular" onclick="operacion()">
+
+            <hr>
+        </div>
+
+        <div id="resultado"></div>
+
+        <div class="figurotas">
+            <img  id= figura src="" alt="">
+        </div>
+
+        <script src="calculos_area.js" type="text/JavaScript"></script>
+    </form>
+
+</body>
+
+</html>

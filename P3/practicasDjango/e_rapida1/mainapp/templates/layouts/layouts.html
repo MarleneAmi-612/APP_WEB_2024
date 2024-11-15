@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title %}{% endblock title %}
+
+    </title>
+</head>
+<body>
+    <h1>Bienvenido a mi primera Evaluacion con Django</h1>
+    <h2>Si se puede, Si se puede, Si se puedeeeee</h2>
+    <nav>
+        <ul>
+            <li><a href="{% url "inicio" %}">Inicio</a></li>
+            <li><a href="{% url "mision" %}">Mision</a></li>
+            <li><a href="{% url "vision" %}">Vision</a></li>
+            <li><a href="{% url "about" %}">Nosotros</a></li>
+        </ul>
+    </nav>
+    {% block content %}{% endblock content %} 
+</body>
+</html>

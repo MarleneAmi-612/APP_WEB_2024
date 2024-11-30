@@ -20,13 +20,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-@q0!7xq^_pb%ebnig=^+04(7sgqdr12bun0_$jxgnxmh&4wx9^'
+SECRET_KEY = 'django-insecure-pogabvr0+se(m*&_l)slmqlqrq6rc=et2uqm3*8k4dq*mjt(co'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
-ALLOWED_HOSTS = []
-
+DEBUG = False
+#Esto permite que Django use el handler404 para manejar errores. Con DEBUG = True, Django muestra una página de error especial que impide que handler404 funcione.
+ALLOWED_HOSTS = ['localhost', '127.0.0.1']
+#si debug es false es necesario configurar esto, esto contiene informacion de el servidor donde tambien puede ser ejecutado nuestro proyecto
 
 # Application definition
 
@@ -104,7 +104,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/5.1/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'es-es'
 
 TIME_ZONE = 'UTC'
 
@@ -117,6 +117,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
 STATIC_URL = 'static/'
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field

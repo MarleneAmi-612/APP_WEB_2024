@@ -1,5 +1,5 @@
 """
-URL configuration for e_rapida1 project.
+URL configuration for proyectoUTD project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/5.1/topics/http/urls/
@@ -17,12 +17,16 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from mainapp import views
+from django.conf.urls import handler404 #permite que Django use una vista personalizada en caso de un error 404
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('inicio/',views.index_view, name='inicio'),
-    path('about/',views.about_view, name='about'),
-    path('mision/',views.mision_view, name='mision'),
-    path('vision/',views.vision_view, name='vision'),
-    path('',views.index_view, name='inicio'),
+    path('inicio/',views.index, name='inicio'),
+    path('',views.index, name='inicio'),
+    path('acercade/',views.about, name='acercade'),
+    path('mision/',views.mision, name='mision'),
+    path('vision/',views.vision, name='vision'),
+
 ]
+#cada vez que ocurra este error, en lugar de mostar su pagina por defecto toda fellota, me lleve a inicio
+handler404 = views.redirigir_usuario 
